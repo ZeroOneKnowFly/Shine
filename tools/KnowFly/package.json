@@ -1,0 +1,53 @@
+{
+  "name": "KnowFly",
+  "displayName": "KnowFly",
+  "publisher": "ZeroOneKnowFly Global Develop team",
+  "description": "Switch between different C/C++ compilers and run-time environments.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "icon": "icon.ico",
+  "activationEvents": [
+    "onCommand:extension.switchCompiler",
+    "onCommand:extension.compileWithGcc"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.switchCompiler",
+        "title": "Switch Compiler"
+      },
+      {
+        "command": "extension.compileWithGcc",
+        "title": "Compile with GCC"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "KnowFly",
+          "title": "KnowFly",
+          "icon": "favicon.ico"
+        }
+      ]
+    },
+    "views": {
+      "tzRuntime": [
+        {
+          "id": "KnowFly",
+          "name": "Compilers"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "echo no compilation needed",
+    "compile": "echo no compilation needed",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  }
+}
