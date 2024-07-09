@@ -1,6 +1,4 @@
-# TzRuntime
-
-TzRuntime 是一个用于天智数据库开发组的VSCode扩展。
+# ShineRuntime
 
 ## 功能
 
